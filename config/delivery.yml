@@ -31,6 +31,7 @@ spec:
         app.kubernetes.io/component: run
         app.kubernetes.io/part-of: tanzu-java-web-app
         apps.tanzu.vmware.com/has-tests: "true"
+        apps.tanzu.vmware.com/sonar-scan: "true"
         apps.tanzu.vmware.com/workload-type: web
         carto.run/workload-name: tanzu-java-web-app
         conventions.apps.tanzu.vmware.com/framework: spring-boot
