@@ -37,7 +37,7 @@ spec:
           spring-boot-convention/app-live-view-appflavour-check
           spring-boot-convention/app-live-view-connector-boot
           spring-boot-convention/app-live-view-appflavours-boot
-        developer.apps.tanzu.vmware.com/image-source-digest: tapdemoregistry.azurecr.io/tanzu/tanzu-supply-chain/tap-demo-java-source:latest@sha256:a608908a2251a0eb904a32e78b70cf11b4f4ae540cb6d8dbd3ec51aabac55381
+        developer.apps.tanzu.vmware.com/image-source-digest: tapdemoregistry.azurecr.io/tanzu/tanzu-supply-chain/tap-demo-java-source:latest@sha256:4c1310cd00888d1ede69d8a8119ee3341708abfefba5d2c140d4481625e627b9
         developer.conventions/target-containers: workload
       labels:
         app.kubernetes.io/component: run
@@ -61,7 +61,7 @@ spec:
           value: "9005"
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details="always" -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include="*" -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: tapdemoregistry.azurecr.io/tanzu/tanzu-supply-chain/tap-demo-java-tap-dev@sha256:bc09661cff2ce9ccc821c85192ab8ea89e5d9066bc6c70c4e02aab8a28f267d6
+        image: tapdemoregistry.azurecr.io/tanzu/tanzu-supply-chain/tap-demo-java-tap-dev@sha256:4b5c7b9d810e8a88577f9f23313de1546751261399bb05543b7c8aa33ff07229
         livenessProbe:
           httpGet:
             path: /livez
