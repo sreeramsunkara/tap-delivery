@@ -61,7 +61,7 @@ spec:
           value: redis,crawler,rabbitmq
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details="always" -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include="*" -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080"
-        image: tapdemoregistry.azurecr.io/tanzu/tanzu-supply-chain/where-for-dinner-search-proc-tap-dev@sha256:7e58593fa3de11ae2da1f4ae2573e9823a4e351dad4301a62e28b92fe25ce9a4
+        image: tapdemoregistry.azurecr.io/tanzu/tanzu-supply-chain/where-for-dinner-search-proc-tap-dev@sha256:f5db750af099802ea4eda25a85f4e2685cbe15b22e839a337bfc350c50f71d70
         livenessProbe:
           httpGet:
             path: /livez
