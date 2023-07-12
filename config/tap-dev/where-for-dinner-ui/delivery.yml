@@ -35,7 +35,7 @@ spec:
       - env:
         - name: REACT_APP_PROFILE
           value: nonsecure
-        image: tapdemoregistry.azurecr.io/tanzu/tanzu-supply-chain/where-for-dinner-ui-tap-dev@sha256:56d3cbe87e3afeef470c7b6e32fada8a0f7b88c6ead1c410085fc3626be275c3
+        image: tapdemoregistry.azurecr.io/tanzu/tanzu-supply-chain/where-for-dinner-ui-tap-dev@sha256:9317af6e2031714cbf8f047352f5bd60060f7aac3c7afd99d29d767f65d5ae42
         name: workload
         resources:
           limits:
