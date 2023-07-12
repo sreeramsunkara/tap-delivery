@@ -61,7 +61,7 @@ spec:
           value: rabbitmq
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details="always" -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include="*" -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080"
-        image: tapdemoregistry.azurecr.io/tanzu/tanzu-supply-chain/where-for-dinner-notify-tap-dev@sha256:2df5acfa3bc322d093c7fe86e0d4526bf29c3c8605a9698fde03a38be9d1c7f6
+        image: tapdemoregistry.azurecr.io/tanzu/tanzu-supply-chain/where-for-dinner-notify-tap-dev@sha256:13db9865d19b5598089458c26b0d03fbbb7e20b40ee4b13a4d0d0da1fc9081dd
         livenessProbe:
           httpGet:
             path: /livez
