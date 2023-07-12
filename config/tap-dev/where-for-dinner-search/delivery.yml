@@ -64,7 +64,7 @@ spec:
           value: mysql,rabbitmq
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details="always" -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include="*" -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080"
-        image: tapdemoregistry.azurecr.io/tanzu/tanzu-supply-chain/where-for-dinner-search-tap-dev@sha256:7469e95468a8b9d91be3b9c84a594226cff271b4ba168cda63ee9584c03b6c66
+        image: tapdemoregistry.azurecr.io/tanzu/tanzu-supply-chain/where-for-dinner-search-tap-dev@sha256:bcaad14ed39ffad08657879db52bc8c6e4c1a4e12591ca59e7c936fa86406dcc
         livenessProbe:
           httpGet:
             path: /livez
