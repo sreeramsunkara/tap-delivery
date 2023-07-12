@@ -49,7 +49,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dserver.port="8080"
-        image: tapdemoregistry.azurecr.io/tanzu/tanzu-supply-chain/where-for-dinner-crawler-tap-dev@sha256:58917c4e524e0befe527c0ea1a61ce63b11db12a688725990ac309a5f0123d73
+        image: tapdemoregistry.azurecr.io/tanzu/tanzu-supply-chain/where-for-dinner-crawler-tap-dev@sha256:e36225df30df04a6ed1e5cf0a8d6c2458d2301ee8e675f86ad344f22ee7494ec
         name: workload
         ports:
         - containerPort: 8080
